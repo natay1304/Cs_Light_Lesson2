@@ -36,12 +36,12 @@ namespace Task2
                 {
                     case "usd":
                         usd -= currencyValue; 
-                        currencyValue *= 65.8f;
+                        currencyValue *= rubToUsd;
                         break;
 
                     case "evro":
                         evro -= currencyValue;
-                        currencyValue *= 74.4f;
+                        currencyValue *= rubToEvro;
                         break;
        
                     case "rub":
@@ -66,10 +66,11 @@ namespace Task2
                     rub += currencyValue;
                 }
 
-                Console.WriteLine("Your actual currency balance is:\n\nUSD = " + usd + "\nEVRO = " + evro + "\nRUB = " + rub);
+                Console.WriteLine("\nYour actual currency balance is:\n\nUSD = " + usd + "\nEVRO = " + evro + "\nRUB = " + rub);
                 Console.Write("\nDo you still want to convert any currency (Yes/No)? - ");
                 answer = Console.ReadLine();
-                //Console.Clear(); - если не нужна история 
+                Console.Clear(); //можно не зачищать, тогда удалить 72 и 73 строки
+                Console.WriteLine("\nYour actual currency balance is:\n\nUSD = " + usd + "\nEVRO = " + evro + "\nRUB = " + rub);
             }
             
             Console.WriteLine("Goodbye!");

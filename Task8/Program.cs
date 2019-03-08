@@ -21,7 +21,7 @@ namespace Task8
                 if (i-- > 1 && password != rightPassword)
 
                 {
-                    Console.Write("\nYour password is wrong. You have " + i + " попыток.\nEnter your password once more: ");
+                    Console.Write("\nYour password is wrong. You have " + i + " attempt.\nEnter your password once more: ");
                     password = Console.ReadLine();
                 }
                 else if (password == rightPassword)
@@ -31,7 +31,7 @@ namespace Task8
                 }
                 else
                 {
-                    Console.WriteLine("\nYour password is still wrong and you have not any попыток. You lose!");
+                    Console.WriteLine("\nYour password is still wrong and you have not any attempts. You lose!");
                     break;
                 }
             }
